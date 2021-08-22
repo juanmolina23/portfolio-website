@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <h1>footer section</h1>
     </footer>
   )
