@@ -10,9 +10,10 @@ module.exports = {
   },
   mode: "development",
   devServer: {
-    contentBase: path.join(__dirname, "src"),
+    static: {
+      directory: path.join(__dirname, "src")
+    },
     hot: true,
-    inline: true,
     historyApiFallback: true //{ index: "index.html" }
   },
   module: {
@@ -24,7 +25,11 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, { loader: "css-loader", options: { url: false } }, "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: "css-loader", options: { url: false } },
+          "sass-loader"
+        ]
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
