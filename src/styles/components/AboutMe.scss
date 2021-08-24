@@ -2,7 +2,11 @@
   background-color: $off-white;
 
   .about-me-summary {
-    width: 800px;
-    margin-left: 100px;
+    width: 100vw;
+  }
+
+  .about-me-img {
+    width: 300px;
+    border-radius: 50%;
   }
 }
