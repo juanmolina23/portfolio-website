@@ -1,10 +1,25 @@
 import React, { useEffect } from "react"
 
+import { Card, CardGroup, Col, Container, Row } from "react-bootstrap"
+import javascript from "../images/skills/javascript.svg"
+
 function SkillsTools() {
   return (
-    <div id="skills" className="custom-section">
-      <h1>Skills and Tools section</h1>
-    </div>
+    <Container fluid>
+      <h1 className='text-center'>Technical Skills</h1>
+      <CardGroup>
+        <Row>
+          <Col>
+            <Card>
+              <Card.Img variant='top' src={javascript} />
+              <Card.Body>
+                <Card.Title>JavaScript</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </CardGroup>
+    </Container>
   )
 }
 
