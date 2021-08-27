@@ -1,31 +1,23 @@
 .bg-image {
-  height: 100vh;
-  width: 100%;
-  margin-top: -90px;
-  position: relative;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("../../images/main-bg2.jpg");
-}
-
-.overlay {
-  position: absolute;
+  padding-top: 200px;
+  padding-bottom: 100px;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  margin-top: -90px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../../images/dark-overlay-bg.gif");
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.profile-pic {
-  width: 300px;
-  border-radius: 50%;
 }
 
-@media (max-width: $bp_small) {
-  .profile-pic {
-    width: 100px;
+@media (min-width: $bp_large) {
+  #image-container {
+    width: 300px;
+  }
+}
+
+@media (min-width: $bp_xlarge) {
+  #image-container {
+    width: 400px;
   }
 }

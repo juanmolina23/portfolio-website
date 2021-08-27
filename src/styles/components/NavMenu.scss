@@ -1,12 +1,12 @@
-#navbarMenu {
-  height: 90px;
+#navbar-menu {
   font-size: 1.25em;
+  background-color: black;
 
-  #navbarMenuBrand {
+  #navbar-menu-brand {
     font-size: 1.5em;
   }
 
-  #navbarMenuNav {
-    padding: 100px;
+  #navbar-menu-nav {
+    padding-left: 100px;
   }
 }

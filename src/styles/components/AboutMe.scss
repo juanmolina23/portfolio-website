@@ -1,12 +1,30 @@
 #about {
   background-color: $off-white;
-
-  .about-me-summary {
-    width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 90px;
+  #about-me-summary {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 100px;
   }
+}
 
-  .about-me-img {
-    width: 300px;
-    border-radius: 50%;
+@media (max-width: $bp_xlarge) {
+  #about {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    #about-me-summary {
+      margin: 0;
+      width: 100%;
+
+      h1 {
+        text-align: center !important;
+      }
+    }
   }
 }

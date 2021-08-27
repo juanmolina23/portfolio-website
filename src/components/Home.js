@@ -1,31 +1,24 @@
 import React, { useEffect } from "react"
 
-import { Button } from "react-bootstrap"
+import { Button, Image, Container } from "react-bootstrap"
 
 import profilePic from "../images/profile-pic.png"
 
-import AboutMe from "./AboutMe"
-import SkillsTools from "./SkillsTools"
-import Projects from "./Projects"
-import Footer from "./Footer"
-
 function Home() {
   return (
-    <>
-      <div id='home' className='bg-image'>
-        <div className='overlay'>
-          <img src={profilePic} alt='Profile picture' className='profile-pic' />
-          <h1>Full-Stack Developer</h1>
-          <Button variant='primary' size='lg'>
-            Download Resume
-          </Button>
-        </div>
+    <Container
+      fluid
+      id='home'
+      className='bg-image d-flex flex-column justify-content-center align-items-center'
+    >
+      <div id='image-container'>
+        <Image src={profilePic} fluid roundedCircle />
       </div>
-      <AboutMe />
-      <SkillsTools />
-      <Projects />
-      <Footer />
-    </>
+      <h1>Full-Stack Developer</h1>
+      <Button href='#about' variant='primary' size='lg'>
+        Learn About Me
+      </Button>
+    </Container>
   )
 }
 

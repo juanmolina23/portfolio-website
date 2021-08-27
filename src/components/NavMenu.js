@@ -1,32 +1,49 @@
-import React from "react"
-import { Navbar, Container, Nav } from "react-bootstrap"
+import React, { useEffect, useState } from "react"
+import { Navbar, Container, Nav, Button, NavDropdown } from "react-bootstrap"
 function NavMenu() {
+  const [scrollNum, setScrollNum] = useState(0)
+
+  useEffect(() => {
+    window.onscroll = e => {
+      setScrollNum(window.pageYOffset)
+    }
+  }, [scrollNum])
+
+  const onScrollSticky = () => {
+    if (window.pageYOffset > 200) {
+      setScrollNum(window.pageYOffset)
+    }
+  }
+
   return (
     <Navbar
-      id='navbarMenu'
-      sticky='top'
-      expand='sm'
+      collapseOnSelect
+      expand='lg'
       bg='dark'
       variant='dark'
-      collapseOnSelect
+      fixed='top'
+      id='navbar-menu'
+      className={`${scrollNum ? "" : ""}`}
+      onScroll={onScrollSticky}
     >
-      <Container fluid={true} className='justify-content-center'>
-        <div>
-          <Navbar.Brand id='navbarMenuBrand' href='#home'>
-            Juan Molina
-          </Navbar.Brand>
-        </div>
-        <div>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav id='navbarMenuNav' className='me-auto'>
-              <Nav.Link href='#about'>About Me</Nav.Link>
-              <Nav.Link href='#skills'>Skills &amp; Tools</Nav.Link>
-              <Nav.Link href='#projects'>Projects</Nav.Link>
-              <Nav.Link href='#contact'>Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
+      <Container>
+        <Navbar.Brand id='navbar-menu-brand' href='#home'>
+          Juan Molina
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Collapse id='responsive-navbar-nav'>
+          <Nav className='me-auto' id='navbar-menu-nav'>
+            <Nav.Link href='#about'>About Me</Nav.Link>
+            <Nav.Link href='#skills'>Skills &amp; Tools</Nav.Link>
+            <Nav.Link href='#projects'>Projects</Nav.Link>
+            <Nav.Link href='#contact'>Contact</Nav.Link>
+          </Nav>
+          <Nav>
+            <Button variant='primary' size='lg' className=''>
+              Download Resume
+            </Button>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   )
