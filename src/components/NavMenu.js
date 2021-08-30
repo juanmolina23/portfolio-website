@@ -34,7 +34,8 @@ function NavMenu() {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto' id='navbar-menu-nav'>
             <Nav.Link href='#about'>About Me</Nav.Link>
-            <Nav.Link href='#skills'>Skills &amp; Tools</Nav.Link>
+            <Nav.Link href='#skills'>Skills</Nav.Link>
+            <Nav.Link href='#tools'>Tools</Nav.Link>
             <Nav.Link href='#projects'>Projects</Nav.Link>
             <Nav.Link href='#contact'>Contact</Nav.Link>
           </Nav>

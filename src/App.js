@@ -3,9 +3,10 @@ import React, { useEffect } from "react"
 import Home from "./components/Home"
 import NavMenu from "./components/NavMenu"
 import AboutMe from "./components/AboutMe"
-import SkillsTools from "./components/SkillsTools"
+import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
+import Tools from "./components/Tools"
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <NavMenu />
       <Home />
       <AboutMe />
-      <SkillsTools />
+      <Skills />
+      <Tools />
       <Projects />
       <Footer />
     </div>
