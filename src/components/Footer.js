@@ -17,14 +17,20 @@ function Footer() {
         className='justify-content-center text-center'
       >
         <Col className='contact-info-ctn d-flex justify-content-center w-100'>
-          <div className=' contact-info'>
+          <div className='contact-info'>
             <i className='fas fa-map-marker-alt'> Miami, FL</i>
           </div>
           <div className='contact-info'>
-            <i className='fas fa-phone'> (305) 798-7154</i>
+            <i className='fas fa-phone'>
+              <a href='tel:+3057987154'>(305) 798-7154</a>
+            </i>
           </div>
           <div className='contact-info'>
-            <i className='fas fa-envelope'> juanmolinajiron@gmail.com</i>
+            <i className='fas fa-envelope'>
+              <a href='mailto:juanmolinajiron@gmail.com'>
+                juanmolinajiron@gmail.com
+              </a>
+            </i>
           </div>
         </Col>
       </Row>

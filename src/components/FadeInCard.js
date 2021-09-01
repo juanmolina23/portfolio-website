@@ -11,6 +11,7 @@ function FadeInCard(props) {
             variant='top'
             className={`card-projects-img-size ${image}-cover `}
           />
+
           <Card.Body>
             <Card.Title className='text-center'>{title}</Card.Title>
             <Card.Text>{text}</Card.Text>
