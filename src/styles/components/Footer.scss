@@ -1,0 +1,28 @@
+#footer {
+  background-color: #202529;
+  height: 200px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.social-icon {
+  font-size: 40px;
+}
+
+@media (min-width: $bp_small) {
+  .contact-info-ctn {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $bp_large) {
+  .contact-info-ctn {
+    flex-direction: row;
+  }
+  .contact-info {
+    margin: 0 10px;
+  }
+}

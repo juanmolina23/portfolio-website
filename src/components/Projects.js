@@ -35,21 +35,55 @@ function Projects() {
             title='The Underline'
             projects={true}
             text='Some example text here'
-            tools={["test1", "test2", "test3", "test4"]}
+            tools={[
+              "HTML",
+              "CSS",
+              "Sass",
+              "JavaScript",
+              "Vue",
+              "Node.js",
+              "Express.js",
+              "Mongoose.js",
+              "Webpack",
+              "Babel"
+            ]}
           />
           <FadeInCard
             image='expensify'
-            title='The Underline'
+            title='Expensify App'
             projects={true}
             text='Some example text here'
-            tools={["test1", "test2", "test3"]}
+            tools={[
+              "HTML",
+              "CSS",
+              "Sass",
+              "JavaScript",
+              "React",
+              "Redux",
+              "Firebase",
+              "Node.js",
+              "Express.js",
+              "Webpack",
+              "Babel"
+            ]}
           />
           <FadeInCard
             image='complexapp'
-            title='The Underline'
+            title='Complex Social Media App'
             projects={true}
             text='Some example text here'
-            tools={["test1", "test2", "test3"]}
+            tools={[
+              "HTML",
+              "CSS",
+              "Sass",
+              "JavaScript",
+              "React",
+              "MongoDB",
+              "Node.js",
+              "Express.js",
+              "Webpack",
+              "Babel"
+            ]}
           />
         </Row>
       </CardGroup>

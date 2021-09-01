@@ -37,7 +37,7 @@ function NavMenu() {
             <Nav.Link href='#skills'>Skills</Nav.Link>
             <Nav.Link href='#tools'>Tools</Nav.Link>
             <Nav.Link href='#projects'>Projects</Nav.Link>
-            <Nav.Link href='#contact'>Contact</Nav.Link>
+            <Nav.Link href='#footer'>Contact</Nav.Link>
           </Nav>
           <Nav>
             <Button variant='primary' size='lg' className=''>
