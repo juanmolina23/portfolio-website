@@ -20,7 +20,7 @@ function Projects() {
   return (
     <Container id='projects' fluid className='top-padding'>
       <h1 className='text-center'>Projects</h1>
-      <CardGroup className='top-padding d-flex flex-row justify-content-center'>
+      <CardGroup className='top-padding d-flex justify-content-center'>
         <Row
           sm={1}
           md={1}
@@ -31,21 +31,21 @@ function Projects() {
           className={`fade-in ${isVisible ? "is-visible" : ""}`}
         >
           <FadeInCard
-            image={underlineCover}
+            image='underline'
             title='The Underline'
             projects={true}
             text='Some example text here'
             tools={["test1", "test2", "test3", "test4"]}
           />
           <FadeInCard
-            image={underlineCover}
+            image='expensify'
             title='The Underline'
             projects={true}
             text='Some example text here'
             tools={["test1", "test2", "test3"]}
           />
           <FadeInCard
-            image={underlineCover}
+            image='complexapp'
             title='The Underline'
             projects={true}
             text='Some example text here'

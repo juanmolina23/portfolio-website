@@ -1,5 +1,4 @@
 #projects {
-  background-color: $off-white;
   padding-bottom: 90px;
 }
 
@@ -7,4 +6,24 @@
   background-color: #0d6efb;
   width: 100px;
   margin-top: 10px;
+}
+
+.underline-cover {
+  background-size: 100% 100%;
+  background-image: url("../../images/projects/underline-dark-cover.gif");
+  transition: all 0.2s ease-in;
+}
+
+.underline-cover:hover {
+  background-image: url("../../images/projects/cropped-underline-vid.gif");
+}
+
+.expensify-cover {
+  background-size: 100% 100%;
+  background-image: url("../../images/projects/expensify-dark-cover.gif");
+  transition: all 0.2s ease-in;
+}
+
+.expensify-cover:hover {
+  background-image: url("../../images/projects/cropped-expensify-vid.gif");
 }
