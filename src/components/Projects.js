@@ -6,14 +6,14 @@ import { useInView } from "react-intersection-observer"
 import FadeInCard from "./FadeInCard"
 
 //Images
-import underlinePic from "../assets/images/the-underline.jpg"
-import expensifyPic from "../assets/images/expensify.jpg"
-import complexPic from "../assets/images/complex-app.png"
+import underlinePic from "../assets/the-underline.jpg"
+import expensifyPic from "../assets/expensify.jpg"
+import complexPic from "../assets/complex-app.png"
 
 //Videos
-import underlineVid from "../assets/images/cropped-underline-vid.gif"
-import expensifyVid from "../assets/images/cropped-expensify-vid.gif"
-import complexVid from "../assets/images/complex-vid.gif"
+import underlineVid from "../assets/cropped-underline-vid.gif"
+import expensifyVid from "../assets/cropped-expensify-vid.gif"
+import complexVid from "../assets/complex-vid.gif"
 
 function Projects() {
   const { ref, inView, entry } = useInView()
