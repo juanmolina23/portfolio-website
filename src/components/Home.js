@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 import { Button, Image, Container } from "react-bootstrap"
 
-import professionalPic from "../images/professional-pic.jpg"
+import professionalPic from "../assets/images/professional-pic.jpg"
 
 function Home() {
   return (

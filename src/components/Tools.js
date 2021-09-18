@@ -6,16 +6,16 @@ import { useInView } from "react-intersection-observer"
 import FadeInCard from "./FadeInCard"
 
 //images
-import babelLogo from "../images/tools/babel.svg"
-import firebaseLogo from "../images/tools/firebase.svg"
-import gitLogo from "../images/tools/Git.svg"
-import githubLogo from "../images/tools/github.svg"
-import mongodbLogo from "../images/tools/MongoDB.svg"
-import netlifyLogo from "../images/tools/netlify.svg"
-import npmLogo from "../images/tools/npm.svg"
-import postmanLogo from "../images/tools/postman.svg"
-import vscodeLogo from "../images/tools/vs-code.svg"
-import webpackLogo from "../images/tools/webpack.svg"
+import babelLogo from "../assets/images/tools/babel.svg"
+import firebaseLogo from "../assets/images/tools/firebase.svg"
+import gitLogo from "../assets/images/tools/Git.svg"
+import githubLogo from "../assets/images/tools/github.svg"
+import mongodbLogo from "../assets/images/tools/MongoDB.svg"
+import netlifyLogo from "../assets/images/tools/netlify.svg"
+import npmLogo from "../assets/images/tools/npm.svg"
+import postmanLogo from "../assets/images/tools/postman.svg"
+import vscodeLogo from "../assets/images/tools/vs-code.svg"
+import webpackLogo from "../assets/images/tools/webpack.svg"
 
 function SkillsTools() {
   const { ref, inView, entry } = useInView()

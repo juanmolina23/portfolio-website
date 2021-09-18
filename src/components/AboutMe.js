@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { useInView } from "react-intersection-observer"
 
-import gradPic from "../images/grad-img.jpg"
+import gradPic from "../assets/images/grad-img.jpg"
 
 function AboutMe() {
   const { ref, inView, entry } = useInView()

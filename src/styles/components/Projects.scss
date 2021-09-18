@@ -10,30 +10,30 @@
 
 .underline-cover {
   background-size: 100% 100%;
-  background-image: url("../../images/projects/the-underline.jpg");
+  background-image: url("../../assets/images/projects/the-underline.jpg");
   transition: all 0.2s ease-in;
 }
 
 .underline-cover:hover {
-  background-image: url("../../images/projects/cropped-underline-vid.gif");
+  background-image: url("../../assets/images/projects/cropped-underline-vid.gif");
 }
 
 .expensify-cover {
   background-size: 100% 100%;
-  background-image: url("../../images/projects/expensify.jpg");
+  background-image: url("../../assets/images/projects/expensify.jpg");
   transition: all 0.2s ease-in;
 }
 
 .expensify-cover:hover {
-  background-image: url("../../images/projects/cropped-expensify-vid.gif");
+  background-image: url("../../assets/images/projects/cropped-expensify-vid.gif");
 }
 
 .complex-cover {
   background-size: 100% 100%;
-  background-image: url("../../images/projects/complex-app.png");
+  background-image: url("../../assets/images/projects/complex-app.png");
   transition: all 0.2s ease-in;
 }
 
 .complex-cover:hover {
-  background-image: url("../../images/projects/complex-vid.gif");
+  background-image: url("../../assets/images/projects/complex-vid.gif");
 }
