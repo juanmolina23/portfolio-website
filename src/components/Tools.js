@@ -6,16 +6,16 @@ import { useInView } from "react-intersection-observer"
 import FadeInCard from "./FadeInCard"
 
 //images
-import babelLogo from "../assets/images/babel.svg"
-import firebaseLogo from "../assets/images/firebase.svg"
-import gitLogo from "../assets/images/Git.svg"
-import githubLogo from "../assets/images/github.svg"
-import mongodbLogo from "../assets/images/MongoDB.svg"
-import netlifyLogo from "../assets/images/netlify.svg"
-import npmLogo from "../assets/images/npm.svg"
-import postmanLogo from "../assets/images/postman.svg"
-import vscodeLogo from "../assets/images/vs-code.svg"
-import webpackLogo from "../assets/images/webpack.svg"
+import babelLogo from "../assets/babel.svg"
+import firebaseLogo from "../assets/firebase.svg"
+import gitLogo from "../assets/Git.svg"
+import githubLogo from "../assets/github.svg"
+import mongodbLogo from "../assets/MongoDB.svg"
+import netlifyLogo from "../assets/netlify.svg"
+import npmLogo from "../assets/npm.svg"
+import postmanLogo from "../assets/postman.svg"
+import vscodeLogo from "../assets/vs-code.svg"
+import webpackLogo from "../assets/webpack.svg"
 
 function SkillsTools() {
   const { ref, inView, entry } = useInView()

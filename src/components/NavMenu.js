@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import { Navbar, Container, Nav, Button } from "react-bootstrap"
+
+import resume from "../assets/juan-molina-resume.pdf"
 function NavMenu() {
   const home = "home"
   const about = "about"
@@ -37,7 +39,7 @@ function NavMenu() {
             <Nav.Link onClick={e => scrollTo(e, footer)}>Contact</Nav.Link>
           </Nav>
           <Nav>
-            <a href='../files/juan-molina-resume.pdf' download>
+            <a href={resume} download className='text-center'>
               <Button variant='primary' size='lg' className=''>
                 Download Resume
               </Button>

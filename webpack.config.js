@@ -24,7 +24,7 @@ module.exports = {
         use: ["babel-loader"]
       },
       {
-        test: /\.s?css$/,
+        test: /\.(s?css|sass)$/,
         use: [
           MiniCssExtractPlugin.loader,
           { loader: "css-loader", options: { url: false } },
@@ -32,12 +32,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader"
-          }
-        ]
+        test: /\.(png|jpe?g|gif|svg|pdf|jpg)$/i,
+        loader: "file-loader",
+        options: {
+          name: "assets/[name].[ext]"
+        }
       }
     ]
   },

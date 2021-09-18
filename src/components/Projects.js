@@ -5,6 +5,16 @@ import { useInView } from "react-intersection-observer"
 //components
 import FadeInCard from "./FadeInCard"
 
+//Images
+import underlinePic from "../assets/images/the-underline.jpg"
+import expensifyPic from "../assets/images/expensify.jpg"
+import complexPic from "../assets/images/complex-app.png"
+
+//Videos
+import underlineVid from "../assets/images/cropped-underline-vid.gif"
+import expensifyVid from "../assets/images/cropped-expensify-vid.gif"
+import complexVid from "../assets/images/complex-vid.gif"
+
 function Projects() {
   const { ref, inView, entry } = useInView()
   const [isVisible, setIsVisible] = useState(false)
@@ -14,6 +24,7 @@ function Projects() {
       setIsVisible(inView)
     }
   }, [inView])
+
   return (
     <Container id='projects' fluid className='top-padding'>
       <h1 className='text-center'>Projects</h1>
@@ -28,7 +39,8 @@ function Projects() {
           className={`fade-in ${isVisible ? "is-visible" : ""}`}
         >
           <FadeInCard
-            image='underline'
+            image={underlinePic}
+            video={underlineVid}
             title='The Underline'
             projects={true}
             text='Some example text here'
@@ -46,7 +58,8 @@ function Projects() {
             ]}
           />
           <FadeInCard
-            image='expensify'
+            image={expensifyPic}
+            video={expensifyVid}
             title='Expensify App'
             projects={true}
             text='Some example text here'
@@ -65,7 +78,8 @@ function Projects() {
             ]}
           />
           <FadeInCard
-            image='complex'
+            image={complexPic}
+            video={complexVid}
             title='Complex Social Media App'
             projects={true}
             text='Some example text here'

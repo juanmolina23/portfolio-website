@@ -7,14 +7,14 @@ import FadeInCard from "./FadeInCard"
 
 //images
 
-import bootstrapLogo from "../assets/images/bootstrap.svg"
-import cssLogo from "../assets/images/css3.svg"
-import expressLogo from "../assets/images/express.svg"
-import htmlLogo from "../assets/images/html5.svg"
-import javascriptLogo from "../assets/images/javascript.svg"
-import nodeLogo from "../assets/images/node-js.svg"
-import reactLogo from "../assets/images/react.svg"
-import vueLogo from "../assets/images/vue.svg"
+import bootstrapLogo from "../assets/bootstrap.svg"
+import cssLogo from "../assets/css3.svg"
+import expressLogo from "../assets/express.svg"
+import htmlLogo from "../assets/html5.svg"
+import javascriptLogo from "../assets/javascript.svg"
+import nodeLogo from "../assets/node-js.svg"
+import reactLogo from "../assets/react.svg"
+import vueLogo from "../assets/vue.svg"
 
 function SkillsTools() {
   const { ref, inView, entry } = useInView()

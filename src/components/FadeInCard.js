@@ -1,15 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
 import { Card, Col, Badge, Row } from "react-bootstrap"
 
 function FadeInCard(props) {
-  const { image, title, projects, text, tools } = props
+  const { image, video, title, projects, text, tools } = props
+  const [loadedImg, setLoadedImg] = useState(image)
+
+  const onMouseOverImage = () => {
+    setLoadedImg(video)
+  }
+  const onMouseLeaveImage = () => {
+    setLoadedImg(image)
+  }
+
   if (projects) {
     return (
       <Col className='d-flex justify-content-center '>
         <Card className='card-projects-size bg-transparent'>
           <Card.Img
+            onMouseEnter={onMouseOverImage}
+            onMouseLeave={onMouseLeaveImage}
+            src={loadedImg}
             variant='top'
-            className={`card-projects-img-size ${image}-cover `}
+            className='card-projects-img-size cover'
           />
 
           <Card.Body>
