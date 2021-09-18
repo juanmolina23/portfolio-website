@@ -12,9 +12,9 @@ import cssLogo from "../images/skills/css3.svg"
 import expressLogo from "../images/skills/express.svg"
 import htmlLogo from "../images/skills/html5.svg"
 import javascriptLogo from "../images/skills/javascript.svg"
-import netCoreLogo from "../images/skills/net-core.svg"
 import nodeLogo from "../images/skills/node-js.svg"
 import reactLogo from "../images/skills/react.svg"
+import vueLogo from "../images/skills/vue.svg"
 
 function SkillsTools() {
   const { ref, inView, entry } = useInView()
@@ -43,9 +43,9 @@ function SkillsTools() {
           <FadeInCard image={expressLogo} title='Express' />
           <FadeInCard image={htmlLogo} title='HTML5' />
           <FadeInCard image={javascriptLogo} title='Javascript' />
-          <FadeInCard image={netCoreLogo} title='.NET Core' />
           <FadeInCard image={nodeLogo} title='Node.js' />
           <FadeInCard image={reactLogo} title='React.js' />
+          <FadeInCard image={vueLogo} title='Vue.js' />
         </Row>
       </CardGroup>
     </Container>

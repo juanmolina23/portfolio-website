@@ -5,9 +5,6 @@ import { useInView } from "react-intersection-observer"
 //components
 import FadeInCard from "./FadeInCard"
 
-//images
-import underlineCover from "../images/projects/underline.gif"
-
 function Projects() {
   const { ref, inView, entry } = useInView()
   const [isVisible, setIsVisible] = useState(false)
@@ -68,7 +65,7 @@ function Projects() {
             ]}
           />
           <FadeInCard
-            image='complexapp'
+            image='complex'
             title='Complex Social Media App'
             projects={true}
             text='Some example text here'

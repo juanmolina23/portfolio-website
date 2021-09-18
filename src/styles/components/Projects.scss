@@ -10,7 +10,7 @@
 
 .underline-cover {
   background-size: 100% 100%;
-  background-image: url("../../images/projects/underline-dark-cover.gif");
+  background-image: url("../../images/projects/the-underline.jpg");
   transition: all 0.2s ease-in;
 }
 
@@ -20,10 +20,20 @@
 
 .expensify-cover {
   background-size: 100% 100%;
-  background-image: url("../../images/projects/expensify-dark-cover.gif");
+  background-image: url("../../images/projects/expensify.jpg");
   transition: all 0.2s ease-in;
 }
 
 .expensify-cover:hover {
   background-image: url("../../images/projects/cropped-expensify-vid.gif");
+}
+
+.complex-cover {
+  background-size: 100% 100%;
+  background-image: url("../../images/projects/complex-app.png");
+  transition: all 0.2s ease-in;
+}
+
+.complex-cover:hover {
+  background-image: url("../../images/projects/complex-vid.gif");
 }

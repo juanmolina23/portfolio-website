@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { useInView } from "react-intersection-observer"
 
-import profilePic from "../images/profile-pic.png"
+import gradPic from "../images/grad-img.jpg"
 
 function AboutMe() {
   const { ref, inView, entry } = useInView()
@@ -18,7 +18,7 @@ function AboutMe() {
     <Container fluid id='about' className='top-padding'>
       <div id='image-container'>
         <Image
-          src={profilePic}
+          src={gradPic}
           fluid
           roundedCircle
           ref={ref}

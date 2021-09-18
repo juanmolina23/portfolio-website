@@ -22,7 +22,11 @@ function FadeInCard(props) {
               {tools.map(tool => {
                 return (
                   <Col key={tool}>
-                    <Badge key={tool} pill className='badge-bg-color'>
+                    <Badge
+                      key={tool}
+                      pill
+                      className='badge-bg-color mouse-no-effect'
+                    >
                       {tool}
                     </Badge>
                   </Col>

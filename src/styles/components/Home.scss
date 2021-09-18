@@ -13,11 +13,13 @@
 @media (min-width: $bp_large) {
   #image-container {
     width: 300px;
+    height: 300px;
   }
 }
 
 @media (min-width: $bp_xlarge) {
   #image-container {
     width: 400px;
+    height: 400px;
   }
 }

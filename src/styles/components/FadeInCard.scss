@@ -13,6 +13,10 @@
   height: 288px;
 }
 
+.mouse-no-effect {
+  cursor: default;
+}
+
 @media (min-width: $bp_small) {
   .card-projects-size {
     width: 90vw;
