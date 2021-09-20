@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react"
-import { Navbar, Container, Nav, Button } from "react-bootstrap"
+import { Navbar, Container, Nav, Button, Image } from "react-bootstrap"
 
 import resume from "../assets/juan-molina-resume.pdf"
+import logoImg from "../assets/logo.png"
 function NavMenu() {
   const home = "home"
   const about = "about"
@@ -9,27 +10,33 @@ function NavMenu() {
   const tools = "tools"
   const projects = "projects"
   const footer = "footer"
+  const [navExpanded, setNavExpanded] = useState(false)
 
   const scrollTo = (e, el) => {
-    console.log(el)
     e.preventDefault()
+
     document.getElementById(`${el}`).scrollIntoView()
+
+    setNavExpanded(false)
   }
 
   return (
     <Navbar
-      collapseOnSelect
+      expanded={navExpanded}
       expand='lg'
       bg='dark'
       variant='dark'
       fixed='top'
       id='navbar-menu'
     >
-      <Container>
+      <Container id='nav-container'>
         <Navbar.Brand id='navbar-menu-brand' onClick={e => scrollTo(e, home)}>
-          Juan Molina
+          <Image src={logoImg} className='' id='logo-image' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar.Toggle
+          aria-controls='responsive-navbar-nav'
+          onClick={() => setNavExpanded(true)}
+        />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto' id='navbar-menu-nav'>
             <Nav.Link onClick={e => scrollTo(e, about)}>About Me</Nav.Link>

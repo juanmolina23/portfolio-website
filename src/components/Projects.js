@@ -40,7 +40,7 @@ function Projects() {
         >
           <FadeInCard
             image={underlinePic}
-            video={underlineVid}
+            link='https://sparkdevteams.github.io/underline-frontend/#/'
             title='The Underline'
             projects={true}
             text='Some example text here'
@@ -59,7 +59,7 @@ function Projects() {
           />
           <FadeInCard
             image={expensifyPic}
-            video={expensifyVid}
+            link='https://molina-expensify-app.herokuapp.com/'
             title='Expensify App'
             projects={true}
             text='Some example text here'
@@ -79,7 +79,7 @@ function Projects() {
           />
           <FadeInCard
             image={complexPic}
-            video={complexVid}
+            link='https://molina-complexapp.netlify.app/'
             title='Complex Social Media App'
             projects={true}
             text='Some example text here'

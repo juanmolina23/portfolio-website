@@ -30,7 +30,7 @@ function App() {
       <Home />
       <button
         onClick={backToTop}
-        className={`btn btn-danger btn-floating btn-lg`}
+        className={`btn btn-primary btn-floating btn-lg`}
         id={`btn-back-to-top${showScroll ? "-displayed" : ""}`}
       >
         <i className='fas fa-angle-up'></i>

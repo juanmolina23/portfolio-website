@@ -1,25 +1,15 @@
 import React, { useState } from "react"
-import { Card, Col, Badge, Row } from "react-bootstrap"
+import { Card, Col, Badge, Row, Button } from "react-bootstrap"
 
 function FadeInCard(props) {
-  const { image, video, title, projects, text, tools } = props
-  const [loadedImg, setLoadedImg] = useState(image)
-
-  const onMouseOverImage = () => {
-    setLoadedImg(video)
-  }
-  const onMouseLeaveImage = () => {
-    setLoadedImg(image)
-  }
+  const { image, link, title, projects, text, tools } = props
 
   if (projects) {
     return (
       <Col className='d-flex justify-content-center '>
         <Card className='card-projects-size bg-transparent'>
           <Card.Img
-            onMouseEnter={onMouseOverImage}
-            onMouseLeave={onMouseLeaveImage}
-            src={loadedImg}
+            src={image}
             variant='top'
             className='card-projects-img-size cover'
           />
@@ -27,6 +17,10 @@ function FadeInCard(props) {
           <Card.Body>
             <Card.Title className='text-center'>{title}</Card.Title>
             <Card.Text>{text}</Card.Text>
+            <Button href={link} target='_blank' className='w-100 margin-bottom'>
+              <i className='fas fa-external-link-alt margin-right'></i>
+              Live Demo
+            </Button>
             <Card.Subtitle className='text-center'>
               Developed using:{" "}
             </Card.Subtitle>

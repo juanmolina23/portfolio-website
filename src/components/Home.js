@@ -16,11 +16,11 @@ function Home() {
       className='bg-image d-flex flex-column justify-content-center align-items-center'
       style={sectionStyle}
     >
-      <div id='image-container'>
-        <Image src={professionalPic} fluid roundedCircle />
-      </div>
-      <h1>Full-Stack Developer</h1>
-      <Button href='#about' variant='primary' size='lg'>
+      <h1 id='main-header' className='display-1 text-center '>
+        Juan Molina
+      </h1>
+      <h1 id='main-subheader'>Software Developer</h1>
+      <Button href='#about' variant='primary' size='lg' id='learn-about-me-btn'>
         Learn About Me
       </Button>
     </Container>
