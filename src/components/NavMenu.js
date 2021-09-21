@@ -35,7 +35,7 @@ function NavMenu() {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls='responsive-navbar-nav'
-          onClick={() => setNavExpanded(true)}
+          onClick={() => setNavExpanded(past => !past)}
         />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto' id='navbar-menu-nav'>

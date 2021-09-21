@@ -10,11 +10,6 @@ import underlinePic from "../assets/the-underline.jpg"
 import expensifyPic from "../assets/expensify.jpg"
 import complexPic from "../assets/complex-app.png"
 
-//Videos
-import underlineVid from "../assets/cropped-underline-vid.gif"
-import expensifyVid from "../assets/cropped-expensify-vid.gif"
-import complexVid from "../assets/complex-vid.gif"
-
 function Projects() {
   const { ref, inView, entry } = useInView()
   const [isVisible, setIsVisible] = useState(false)
@@ -43,7 +38,9 @@ function Projects() {
             link='https://sparkdevteams.github.io/underline-frontend/#/'
             title='The Underline'
             projects={true}
-            text='Some example text here'
+            text='
+            The Underline is a non-profit organization with a close partnership with FIU. 
+            Together we developed An Event Management System with features such as authentication, and authorization using modern technologies.'
             tools={[
               "HTML",
               "CSS",
@@ -62,7 +59,8 @@ function Projects() {
             link='https://molina-expensify-app.herokuapp.com/'
             title='Expensify App'
             projects={true}
-            text='Some example text here'
+            text='Expensify is one of my first solo projects I developed as I began my career in software development. It is a web application
+             that allows users to keep track of their expenses. It has on-demand features such as authentication with Google.'
             tools={[
               "HTML",
               "CSS",
@@ -82,7 +80,8 @@ function Projects() {
             link='https://molina-complexapp.netlify.app/'
             title='Complex Social Media App'
             projects={true}
-            text='Some example text here'
+            text='Complex App is blog-style social media platform in which users can create an account, create simple blogs, follow other users and instant message with them.
+             It has many desirable features and it was for the most part of the most complex project to date.'
             tools={[
               "HTML",
               "CSS",

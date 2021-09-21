@@ -5,14 +5,14 @@ import { useInView } from "react-intersection-observer"
 import gradPic from "../assets/grad-img.jpg"
 
 function AboutMe() {
-  const { ref, inView, entry } = useInView()
-  const [isVisible, setIsVisible] = useState(false)
+  // const { ref, inView, entry } = useInView()
+  // const [isVisible, setIsVisible] = useState(false)
 
-  useEffect(() => {
-    if (inView) {
-      setIsVisible(inView)
-    }
-  }, [inView])
+  // useEffect(() => {
+  //   if (inView) {
+  //     setIsVisible(inView)
+  //   }
+  // }, [inView])
 
   return (
     <Container fluid id='about' className='top-padding'>
@@ -21,8 +21,8 @@ function AboutMe() {
           src={gradPic}
           fluid
           roundedCircle
-          ref={ref}
-          className={`margin-bottom fade-in ${isVisible ? "is-visible" : ""}`}
+          //ref={ref}
+          className={`margin-bottom `} //fade-in ${isVisible ? "is-visible" : ""}
         />
       </div>
       <div id='about-me-summary'>
